@@ -1,7 +1,15 @@
 Early detection of cytokine release syndrome (CRS) after CART-therapy through machine learning (ML) models using cytokine and wearable data.
 ==============================
 
-Introduction :
+## Abstract
+
+This project investigates the potential of using machine learning to predict Cytokine Release Syndrome (CRS) onset in patients undergoing CAR-T cell therapy. CRS is a life-threatening side effect in cancer treatment, and its early detection is crucial for improving patient outcomes. Current methods for monitoring CRS in CAR-T therapy limit the feasibility of outpatient care. This study explores the use of machine learning to analyze data from wearable devices and blood tests (cytokine levels) to predict CRS onset earlier, potentially enabling safer outpatient CAR-T therapy.
+Data was collected from two sources: cytokine levels measured in blood samples from infusion day to discharge, and continuous vital signs monitored by wearable devices over a year. Initial exploratory data analysis (EDA) revealed the significance of cytokine levels in CRS prediction and highlighted trends in cytokine and temperature values over time. The methodology involved training Long Short-Term Memory (LSTM) models to analyze sequential patterns of data for early CRS prediction. Models were trained and evaluated using three distinct datasets: cytokine data, wearable data, and merged data. The evaluation included calculating the early detection time, defined as the time difference between predicted CRS onset and actual CRS onset. The models demonstrated good accuracy, with early detection times ranging from 5 to 14 hours.
+By providing a robust framework for early CRS detection, the predictive model has the potential to significantly reduce hospital stays and healthcare costs while improving the quality of life for patients. This marks a notable advancement in personalized care for Multiple Myeloma (MM) patients undergoing CAR-T therapy.
+
+
+## Introduction :
+
 CRS stands for Cytokine Release Syndrome, which is a potentially serious side effect associated with certain immunotherapy treatments, particularly CAR T-cell therapy. CAR T-cell therapy is a type of immunotherapy where a patient's T cells (a type of immune cell) are genetically modified to express chimeric antigen receptors (CARs). These receptors allow the T cells to recognize and attack cancer cells more effectively. In multiple myeloma, CAR T-cell therapy holds promise as a potential treatment option, particularly for patients who have relapsed or become refractory to standard treatments. However, like in other cancers, the development of CRS is a significant concern in the context of CAR T-cell therapy for multiple myeloma.
 
 Multiple myeloma is a cancer of plasma cells, which are a type of white blood cell responsible for producing antibodies. CAR T-cell therapy for multiple myeloma involves genetically modifying a patient's T cells to target a specific protein, such as BCMA (B-cell maturation antigen), which is highly expressed on the surface of myeloma cells.
